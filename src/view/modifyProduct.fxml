@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ModifyProductController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="8.0" prefHeight="581.0" prefWidth="786.0" style="-fx-border-color: GRAY; -fx-border-radius: 20;">
+         <children>
+            <Label layoutX="46.0" layoutY="36.0" text="Modify Product">
+               <font>
+                  <Font name="Helvetica Neue" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="idLbl" layoutX="45.0" layoutY="93.0" prefHeight="17.0" prefWidth="17.0" text="ID">
+               <font>
+                  <Font name="Helvetica Neue" size="13.0" />
+               </font></Label>
+            <Label fx:id="nameLbl" layoutX="45.0" layoutY="130.0" text="Name">
+               <font>
+                  <Font name="Helvetica Neue" size="13.0" />
+               </font></Label>
+            <Label fx:id="invLbl" layoutX="45.0" layoutY="167.0" text="Inv">
+               <font>
+                  <Font name="Helvetica Neue" size="13.0" />
+               </font></Label>
+            <Label fx:id="priceLbl" layoutX="45.0" layoutY="205.0" text="Price/Cost">
+               <font>
+                  <Font name="Helvetica Neue" size="13.0" />
+               </font></Label>
+            <Label fx:id="minLbl" layoutX="91.0" layoutY="257.0" text="Min">
+               <font>
+                  <Font name="Helvetica Neue" size="13.0" />
+               </font></Label>
+            <TextField fx:id="idTxt" disable="true" layoutX="115.0" layoutY="88.0" prefWidth="100.0" />
+            <TextField fx:id="nameTxt" layoutX="115.0" layoutY="125.0" prefWidth="160.0" />
+            <TextField fx:id="invTxt" layoutX="115.0" layoutY="162.0" prefWidth="100.0" />
+            <TextField fx:id="priceTxt" layoutX="115.0" layoutY="200.0" prefWidth="100.0" />
+            <TextField fx:id="maxTxt" layoutX="207.0" layoutY="252.0" prefWidth="50.0" />
+            <TextField fx:id="minTxt" layoutX="115.0" layoutY="252.0" prefWidth="50.0" />
+            <Label fx:id="maxLbl" layoutX="180.0" layoutY="257.0" text="Max">
+               <font>
+                  <Font name="Helvetica Neue" size="13.0" />
+               </font></Label>
+            <TableView fx:id="partsTable" layoutX="291.0" layoutY="50.0" prefHeight="210.0" prefWidth="484.0">
+              <columns>
+                <TableColumn fx:id="partsPartIdCol" prefWidth="75.0" text="Part ID" />
+                <TableColumn fx:id="partsNameCol" prefWidth="240.0" text="Part Name" />
+                  <TableColumn fx:id="partsInvCol" prefWidth="70.0" text="Inv Level" />
+                  <TableColumn fx:id="partsPriceCol" prefWidth="97.0" text="Price per Unit" />
+              </columns>
+            </TableView>
+            <TextField fx:id="searchTxt" layoutX="580.0" layoutY="14.0" onAction="#onActionSearchParts" prefHeight="26.0" prefWidth="192.0" text="Search by Part ID or Name">
+               <font>
+                  <Font name="Helvetica Neue" size="13.0" />
+               </font></TextField>
+            <TableView fx:id="associatedPartsTable" layoutX="291.0" layoutY="298.0" prefHeight="210.0" prefWidth="484.0">
+              <columns>
+                <TableColumn fx:id="assPartIdCol" prefWidth="75.0" text="Part ID" />
+                <TableColumn fx:id="assNameCol" prefWidth="240.0" text="Part Name" />
+                  <TableColumn fx:id="assInvCol" prefWidth="70.0" text="Inv Level" />
+                  <TableColumn fx:id="assPriceCol" prefWidth="97.0" text="Price per Unit" />
+              </columns>
+            </TableView>
+            <Button layoutX="714.0" layoutY="266.0" mnemonicParsing="false" onAction="#onActionAddAssociatedPart" text="Add" />
+            <Button layoutX="701.0" layoutY="525.0" mnemonicParsing="false" onAction="#onActionCancel" text="Cancel">
+               <font>
+                  <Font name="Helvetica Neue" size="12.0" />
+               </font></Button>
+            <Button layoutX="641.0" layoutY="525.0" mnemonicParsing="false" onAction="#onActionSave" prefWidth="54.0" text="Save">
+               <font>
+                  <Font name="Helvetica Neue" size="12.0" />
+               </font></Button>
+            <Button layoutX="291.0" layoutY="525.0" mnemonicParsing="false" onAction="#onActionDeleteAssociatedPart" text="Remove Associated Part">
+               <font>
+                  <Font name="Helvetica Neue" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
