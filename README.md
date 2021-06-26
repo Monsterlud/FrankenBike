@@ -10,4 +10,10 @@ given a name, ready to be sold to an eager custom bike enthusiast.
 ![frankenbike main screen](images/fb_main.png)
 
 **FrankenBike**'s main screen is a simple display of both individual
-bike parts and completed (assembled) "frankenbikes". 
+bike parts and completed (assembled) "frankenbikes". Each item on
+the lists is clickable and allows the user to drill down into
+adding, modifying, and/or deleting bike parts or completed bikes.
+
+![frankenbike part](images/fb_part.png) ![frankenbike bike](images/fb_bike.png)
+
+
