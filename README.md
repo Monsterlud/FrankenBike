@@ -9,3 +9,5 @@ given a name, ready to be sold to an eager custom bike enthusiast.
 ## User Interface
 ![frankenbike main screen](images/fb_main.png)
 
+**FrankenBike**'s main screen is a simple display of both individual
+bike parts and completed (assembled) "frankenbikes". 
