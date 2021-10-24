@@ -17,9 +17,10 @@ adding, modifying, and/or deleting bike parts or completed bikes.
 ![frankenbike part](images/fb_part.png) ![frankenbike bike](images/fb_bike.png)
 
 ### Installation & Code Style
-**FrankenBike** is a Java app repository and there is not APK.
-This application uses the MVC design pattern. The database is stored
-in the Inventory entity using a series of ObservableLists. The Main
-InventoryProgram loads the basic set of data entries (parts and bikes)
-and deletes all data with each restart for a fresh data set. 
+**FrankenBike** is a Java app repository and there is no APK.
+This application uses the MVC design pattern, storing all data
+locally. The database is instantiated and manipulated in the Inventory 
+Entity using a series of ObservableLists. The Main InventoryProgram loads 
+the basic set of data entries (parts and bikes) and deletes all data with 
+each restart for a fresh data set. 
 
