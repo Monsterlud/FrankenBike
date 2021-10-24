@@ -1,8 +1,8 @@
 # FrankenBike
-**FrankenBike** is a Java application that allows a bike shop
-to purchase and enter a variety of parts to the shop's database.
-Once the parts are in the shop and entered into the database, they
-can be combined to create bikes in an unlimited amount of combinations.
+**FrankenBike** was written as part of a WGU course on Java Development.
+This app allows a bike shop to purchase and enter a variety of parts to the 
+shop's database. Once the parts are in the shop and entered into the database, 
+they can be combined to create bikes in an unlimited amount of combinations.
 These custom bikes can then be configured right on the database and
 given a name, ready to be sold to an eager custom bike enthusiast.
 
